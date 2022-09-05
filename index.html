@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacion Web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="container mx-auto font-mono">
+
+    
+   <nav class="flex items-center justify-between flex-wrap bg-sky-900 p-6 sticky top-0">
+        <div class="flex items-center text-white mr-6">
+            <span class="font-semibold text-xl"><a href="index.html">PrograWeb</a></span>
+        </div>
+        <div class="block sm:hidden">
+            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" id="btnMenu">
+                <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>   
+            </button>
+        </div>
+        <div id='menuNAV' class="w-full block sm:flex sm:items-center sm:w-auto hidden">     
+        </div>                        
+   </nav>
+
+
+
+   <section id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+      <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="3"
+      aria-label="Slide 4"
+      ></button>
+      <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="4"
+      aria-label="Slide 5"
+      ></button>
+      <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="5"
+      aria-label="Slide 6"
+      ></button>
+      <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="6"
+      aria-label="Slide 7"
+      ></button>
+      <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="7"
+      aria-label="Slide 8"
+      ></button>
+    </div>
+
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full">
+        <img
+          src="IMG/tutorial.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl font-bold">COMIENZA UNA NUEVA AVENTURA</h5>
+          <p>Adentrate a la creacion de una pagina web a traves de la analogia de construir una casa.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="IMG/complete.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl font-bold">COMPLETA LOS NIVELES</h5>
+          <p>Supera 26 niveles diferentes y obten recompensas unicas en cada una de ellas.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="IMG/niveles.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl font-bold">3 GRANDES MUNDOS</h5>
+          <p>Navega por el universo conociendo las tecnologias de HTML, CSS y JS.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="IMG/ingame.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl font-bold">INTERFAZ COMODA</h5>
+          <p>Utiliza Drag & Drop para construir tu pagina web.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="IMG/menu.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl font-bold">MENU INTERACTIVO</h5>
+          <p>Desplazate a traves de un sencillo e interactivo menu donde podras colocar tus recompensas desbloqueadas.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="IMG/html.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl font-bold">AVENTURA LINEAL</h5>
+          <p>Cada nivel exigira conocimiento adquiridos en niveles posteriores, para que no dejes de aprender y practicar.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="IMG/recompensas.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl font-bold">MUCHAS RECOMPENSAS</h5>
+          <p>Obten distintas recompensas que cuenta con una mensaje que te ayudara a destacar mas el mundo de la programacion web.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="IMG/tarea.png"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl font-bold">CLANES</h5>
+          <p>Ingresa a un clan creado por tu docente, para acceder a nuevos niveles con mas recompensas.</p>
+        </div>
+      </div>
+    </div>
+    
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+   </section>
+
+
+    <section class="flex justify-center bg-black py-6">
+        <h1 class="font-bold text-white text-xl">SISTEMA DE GAMIFICACION</h1>
+    </section>
+
+
+  <section class="flex flex-wrap items-center justify-center bg-black p-6 lg:flex-nowrap">  
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-4">
+            <div class="px-6 py-4 bg-white rounded-lg">
+                <img class="w-32 mx-auto" src="IMG/idea.png">
+                <div class="font-bold text-xl mb-2 text-center">Practica y Ejercicios</div>
+                <p class="text-gray-700 text-base">
+                    Los estudiantes pueden reforzar sus conocimientos adquiridos en la materia de Programación Web I de manera didáctica y divertida.              
+                </p>
+            </div>
+        </div>     
+    </div>     
+    <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+        <div class="px-6 py-4">
+            <div class="px-6 py-4 bg-white rounded-lg">
+                <img class="w-32 mx-auto" src="IMG/score.png">
+                <div class="font-bold text-xl mb-2 text-center">Registro De Puntuaciones</div>
+                <p class="text-gray-700 text-base">
+                    Se registran los niveles completados y sus respectivas puntuaciones de acuerdo al progreso de cada uno de los estudiantes.
+                </p>
+            </div>
+        </div>     
+    </div>     
+    <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+        <div class="px-6 py-4">
+            <div class="px-6 py-4 bg-white rounded-lg">
+                <img class="w-32 mx-auto" src="IMG/trophy.png">
+                <div class="font-bold text-xl mb-2 text-center">Recompensas</div>
+                <p class="text-gray-700 text-base">
+                    El sistema de gamificación cuenta con un sistema de recompensas que motivará a utilizar de forma continua el sistema de gamificación.
+                </p>
+            </div>
+        </div>     
+    </div>     
+    <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+        <div class="px-6 py-4">
+            <div class="px-6 py-4 bg-white rounded-lg">
+                <img class="w-32 mx-auto" src="IMG/clan.png">
+                <div class="font-bold text-xl mb-2 text-center">Clanes y Tareas</div>
+                <p class="text-gray-700 text-base">
+                    Se cuenta con un módulo para el docente en el cual podrá ver el avance de sus estudiantes y asignar tareas.
+                </p>
+            </div>
+        </div>     
+    </div>                                           
+  </section>
+
+    <section class="flex justify-center bg-black py-6">
+        <h1 class="font-bold text-white lg:text-xl text-lg">CASO: UNIVERSIDAD PRIVADA DEL VALLE</h1>
+    </section>
+
+
+  <section class="flex flex-wrap items-center justify-center bg-black p-6 lg:flex-nowrap">  
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-4">
+            <div class="px-6 py-4 rounded-lg">
+                <img class="w-32 mx-auto" src="IMG/Univalle.png">
+                <div class="font-bold text-xl mb-2 text-center text-white py-3">UNIVERSIDAD PRIVADA DEL VALLE</div>
+            </div>
+        </div>     
+    </div>     
+    <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+        <div class="px-6 py-4">
+            <div class="px-6 py-4 bg-white rounded-lg">
+                <img class="w-32 mx-auto" src="IMG/about.png">
+                <div class="font-bold text-xl mb-2 text-center">Acerca de UNIVALLE</div>
+                <p class="text-gray-700 text-base">
+                    La Universidad del Valle, es una institución dedicada a la formación de educación
+                    superior, fundada el 4 de Octubre de 1988 por el Ing. Gonzalo Ruiz Martínez.
+                    Comúnmente denominada como Univalle, cuenta con más de treinta y dos carreras que
+                    imparte en su sede central ubicada en Cochabamba, como también en sus subsedes: La
+                    Paz, Sucre, Trinidad y Santa Cruz.                       
+                </p>
+            </div>
+        </div>     
+    </div>     
+    <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+        <div class="px-6 py-4">
+            <div class="px-6 py-4 bg-white rounded-lg">
+                <img class="w-32 mx-auto" src="IMG/target.png">
+                <div class="font-bold text-xl mb-2 text-center">Mision</div>
+                <p class="text-gray-700 text-base">
+                    La universidad considera como misión institucional la
+                    divulgación y propagación del conocimiento, correspondiente a las diversas áreas de la
+                    ciencia, fundamentalmente a las correspondientes a sus programas de pregrado,
+                    postgrado, investigación y extensión universitaria.</p>
+            </div>
+        </div>     
+    </div>     
+    <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+        <div class="px-6 py-4">
+            <div class="px-6 py-4 bg-white rounded-lg">
+                <img class="w-32 mx-auto" src="IMG/maps.png">
+                <div class="font-bold text-xl mb-2 text-center">Ubicacion</div>
+                <p class="text-gray-700 text-base">
+                    Av. Argentina 2083, La Paz
+                    Universidad del Valle - Campus Miraflores, dirección.
+                </p>
+            </div>
+        </div>     
+    </div>                                           
+  </section>
+
+
+
+  <!-- Main modal -->
+  <div id="modalLogin"  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center flex" >
+      <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="authentication-modal id" id="closeModal">
+                  <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+              <div class="py-6 px-6 lg:px-8">
+                  <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Introduzca sus datos</h3>
+                  <form class="space-y-6" action="#">
+                      <div>
+                          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Correo Electronico:</label>
+                          <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="correo@institucion.com" required>
+                      </div>
+                      <div>
+                          <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Contraseña:</label>
+                          <input type="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                      </div>                      
+                      <button class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="btnLogin">Iniciar Sesion</button>                      
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div> 
+  
+  <section class="flex justify-center bg-gray-900 pt-6">
+    <h1 class="font-bold text-white text-xl">Saul Imanol Quiroga Castrillo</h1>
+  </section>
+
+  <footer class="text-white bg-gray-900 lg:grid lg:grid-cols-10 lg:pb-0 pb-16">
+    <aside class=" lg:col-span-2 lg:block lg:px-16 lg:pt-0 px-24 pt-6 ">
+      <img
+        class="inset-0 object-cover w-44 h-44 rounded-full"
+        src="IMG/yomero.png"
+      />
+    </aside>
+  
+    <div class="lg:col-span-2 lg:block lg:px-16 lg:py-16 px-16 pt-6 ">
+      <div class="grid grid-cols-2 gap-1">
+          <p class="text-xl font-bold">
+            <span class="text-2xl tracking-widest uppercase">
+              Telefono:
+            </span>
+            <a class="block text-md hover:opacity-75" >
+              78951408
+            </a>
+          </p>    
+      </div>   
+    </div>   
+    <div class="lg:col-span-3 lg:block lg:px-16 lg:py-16 px-16 pt-6">
+        <div class="grid grid-cols-2 gap-1">
+            <p class="text-xl font-bold">
+              <span class="text-2xl tracking-widest uppercase">
+                Correo:
+              </span>
+              <a class="block text-md hover:opacity-75">
+                saulquirogacasdvl@gmail.com
+              </a>
+            </p>    
+        </div>   
+      </div>   
+      <div class="lg:col-span-2 lg:block lg:px-16 lg:py-16 px-16 pt-6">
+        <div class="grid grid-cols-2 gap-1">
+            <p class="text-xl font-bold">
+              <span class="text-2xl tracking-widest uppercase">
+                GitHub:
+              </span>
+              <a class="block text-md hover:opacity-75" href="https://github.com/saulQuirogaDVL">
+                saulQuirogaDVL
+              </a>
+            </p>    
+        </div>   
+      </div>   
+      
+  </footer>
+  
+
+</body>
+<script type="module" src="JS/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</html>

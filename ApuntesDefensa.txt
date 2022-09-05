@@ -1,0 +1,56 @@
+28/08/2022: Capitulo I
+
+Interrogantes:
+    - se debe incluir el resumen dentro de las diapositivas?
+    - se deben incluir las justificaciones en las diapositivas?
+    - se deben incluir metodologias en las diapositivas?
+
+Preguntas Personales:
+    - Por que unity y no unreal engine o godot?
+        R. por que ya se cuenta con un conocimiento previo, tiene un mejor soporte para juegos 2D
+            ademas que permite convertir el juego a celular y html de una manera simple, se presenta de mejor manera el rendimiento y se lleva mejor con FB
+
+    - Por que firebase ?
+        R. por que permite hacer consultas en cualquier momento con una conexion simple, ademas que genera un backend sencillo para trasladarlo a las consultas web
+            y las conexion 
+
+    - por que COCOMO y no cosmic o ifpug?
+        R. el principal problema de estos otros metodos es que la respuesta es muy subjetiva y depende del una conocimiento empirico, cocomo es mas directo y a traves
+            de sus parametros te entrega un resultado aproximado ademas que en el libro ingenieria del software, de roger pressman es el modelo de estimacion de 
+            costes sugerido, los puntos de funcion y requerimientos solo "funcionan" en arquitecturas como cascada
+
+    - por que utilizamos el software de cocomo 2 y no sus tablas?
+        R. por que es una herramienta mas
+
+    - por que cocomo 2 y no cocomo I?
+        R. cocomo 1 para estructuras en cascada y cocomo 2 para agiles o marcos de trabajo
+
+
+29/08/2022: Capitulo II 
+
+Interrogantes:
+    - 
+
+Preguntas Personales:
+
+    - Quienes fundaron / crearon SUM?
+        R. no se puede atribuir a una persona o compañia en concreto la cracion de SUM, dado que se formo por la falta de una guia para la creacion de videojuego, en 
+        el caso de videojuegos indies o conformados por grupos pequeños, los cuales en su momento eran desarrolladores. empresas de gran escala utilizaban marcos como SCRUm
+        para la creacion de sus juegos pero este enfoque no encjaba con las necesidades del proyecto por lo tanto a traves de una fucion de ideas fue que se desarrollo este
+         marco de trabajo, no seria hasta 2004-2008 que la pagina GEMSERK comience a subir actualizaciones respecto de como despues de un largo de debate se genero y funcionan
+         dicho marco de trabajo tambien contamos con el blog: beliblog en su seccion de SUM habla mas de su funcionalidad en un medio actual. rescatando que su uso en proyectos
+         pequeños y mas enfocado a personas del area de sistemas que conocen metodologias para crear un software.
+
+    - por que magerit?
+        - por que se encuentra mas enfocado a los riesgos de un sistema de informacion, ademas que los resultados entregados son faciles de comprender contando con sistemas
+        de colores, porcentajes basados en los datos obtenidos y dando a pie a escalar otros riesgos con las mismas normativas
+        ademas que la metodologia toma en cuenta 3 principales aspectos integridad, confidencialidad y dispponibilidad, que dentro del desarrollo del software son puntos
+        que toman mucho valor, ademas de la relacion que tiene con las normas 27001 y 31000 complementando al gestion y cualificacion de los activos 
+            - que son las normas 27001 y 31000?
+                R. 31000, es una norma que muestra como implementar buenas practicas en la gestion de riesgos, donde se caracterira por su principales componentes como ser:
+                identificación, análisis, evaluación, tratamiento, comunicación y seguimiento de cualquier tipo de riesgo 
+                R,27001, es una norma que proporciona un marco de trabajo para cubri la confidencialidad, integridad y disponibilidad continuada de la información, la cual busca
+                la proteccion de los activos mas importantes  
+
+Preguntas Externas:
+    - 
